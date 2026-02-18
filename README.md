@@ -1,17 +1,44 @@
-# Word-Mutations-Graph-Solver
-Efficient C implementation of a graph-based word mutation solver using shortest-path algorithms and adjacency lists.
+# Graph Optimization Engine
 
-# Features
-- Graph-based modelling of word mutation problems
-- Efficient dictionary handling with binary search over sorted word lists
-- Dynamic adjacency list construction
-- Full implementation of Dijkstra’s shortest path algorithm (priority-based exploration)
-- Optimized build with `-O3` and strict warnings (`-Wall -std=c99`)
-- Careful memory management and robustness for large inputs
+A performance-focused C implementation of shortest-path optimization over implicitly defined graphs, designed under strict time and memory constraints.
 
-# Algorithm & Implementation Notes
-- The dictionary is loaded, sorted, and queried using binary search for fast lookups.
-- Neighbor words are generated on demand by testing single-letter mutations instead of precomputing all edges, reducing memory usage.
-- Each word is treated as a node, and valid single-letter mutations define the graph connections.
-- The shortest transformation path is computed using Edsger W. Dijkstra’s algorithm, ensuring optimal paths while exploring only the necessary parts of the graph.
-- The implementation focuses on performance, low memory overhead, and scalability for large dictionaries and multiple problem instances.
+---
+
+## Engineering Focus
+
+This project demonstrates:
+
+- Efficient modelling of large implicit graphs
+- On-demand neighbor generation to reduce memory overhead
+- Shortest-path optimization using priority-based exploration
+- Non-linear edge cost modelling
+- Careful dynamic memory management in C
+- Scalable processing of multiple problem instances
+- Robust file parsing and controlled program termination
+
+---
+
+## Algorithmic Design
+
+Rather than materializing the full graph in memory, adjacency relationships are computed dynamically during exploration. This design choice reduces memory usage and improves scalability for large input spaces.
+
+The optimization core relies on Dijkstra’s algorithm with a priority-based frontier expansion strategy, ensuring optimal path discovery while minimizing unnecessary exploration.
+
+---
+
+## Systems-Level Considerations
+
+- Strict control of heap allocations
+- Avoidance of memory leaks
+- Efficient lookup structures
+- Deterministic runtime behavior
+- Makefile-based compilation with optimization flags
+
+---
+
+## Technologies
+
+- C (C99)
+- Graph Algorithms
+- Shortest Path Optimization
+- Systems Programming
