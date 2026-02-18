@@ -6,12 +6,6 @@ Efficient C implementation of a graph-based word mutation solver using shortest-
 - Efficient dictionary handling with binary search over sorted word lists
 - Dynamic adjacency list construction
 - Full implementation of Dijkstra’s shortest path algorithm (priority-based exploration)
-- Modular architecture:
-  - `main.c` — program entry point and argument handling
-  - `fase1.c` — dictionary processing and base functionalities
-  - `fase2.c` — graph construction and mutation logic
-  - `Djikstra.c` — shortest-path algorithm implementation
-  - `Proj.h` — shared data structures and interfaces
 - Optimized build with `-O3` and strict warnings (`-Wall -std=c99`)
 - Careful memory management and robustness for large inputs
 
