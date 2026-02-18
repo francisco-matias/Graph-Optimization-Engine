@@ -1,4 +1,4 @@
-# Graph Optimization Engine
+# Word Mutations
 
 A performance-focused C implementation of shortest-path optimization over implicitly defined graphs, designed under strict time and memory constraints.
 
